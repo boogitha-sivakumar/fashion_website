@@ -109,9 +109,9 @@ header {
 /* navbar - end */
 
 /* Home page category tab - Start */
-.homepage {
-  /* background-color: #111; */
-}
+/* .homepage {
+  background-color: #111;
+} */
 
 .homepage_contents .category {
   display: flex;
