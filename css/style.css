@@ -4,6 +4,34 @@ body {
   font-family: Arial, sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    45deg,
+    #ac4227,
+    #c47334,
+    #3e0976,
+    #103067
+  ); /* Gradient Colors */
+  background-size: 400% 400%; /* Make the gradient large for smooth transition */
+  animation: gradientBG 10s ease infinite; /* Animation name, duration, type, and infinite looping */
+  z-index: 2;
+}
+
+/* Keyframes for the gradient background animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* navbar - start */
 header {
   background-color: #000;
@@ -35,6 +63,7 @@ header {
   color: #fff;
   margin-top: 10px;
 }
+
 .dropbtn {
   background-color: #000;
   color: white;
@@ -81,7 +110,7 @@ header {
 
 /* Home page category tab - Start */
 .homepage {
-  background-color: #111;
+  /* background-color: #111; */
 }
 
 .homepage_contents .category {
@@ -102,6 +131,7 @@ header {
   text-align: center;
   font-size: 15px;
   color: white;
+  font-weight: 700;
 }
 /* Home page category tab - End */
 
@@ -275,7 +305,7 @@ input:not(:checked) + label + .ci {
 /* Categories page - Start */
 .section {
   padding: 50px 0;
-  background-color: #111;
+  /* background-color: #111; */
   color: #fff;
 }
 
@@ -284,8 +314,8 @@ input:not(:checked) + label + .ci {
 }
 
 .section-heading h2 {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 /* Grid Layout */
@@ -376,6 +406,11 @@ img.img-fluid {
 }
 
 /* Product card container */
+h3.h2.mt-2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
 .product-card-1 {
   position: relative;
   display: flex;
@@ -416,6 +451,10 @@ img.img-fluid {
   z-index: 10;
 }
 
+span.badge.bg-danger {
+  font-size: 16px;
+}
+
 .product-action {
   position: absolute;
   top: 10px;
@@ -439,6 +478,7 @@ img.img-fluid {
 .product-cart-btn .btn {
   padding: 10px;
   text-align: center;
+  font-size: 17px;
 }
 
 /* Product Card Info */
@@ -448,7 +488,7 @@ img.img-fluid {
 }
 
 .product-price {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: bold;
   text-align: center;
 }
@@ -461,6 +501,15 @@ img.img-fluid {
   color: #999;
 }
 /* Latest arrivals - End */
+
+.footer-bottom {
+  background-color: black;
+  color: white;
+}
+
+.footer-bottom p {
+  font-size: 17px;
+}
 
 p.m-0 {
   text-align: center;
